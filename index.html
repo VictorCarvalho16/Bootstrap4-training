@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
 
     <title>Curso de Bootstrap4</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
@@ -66,23 +67,23 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="src/carousel-1.jpg" alt="" class="img-fluid d-block">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3> Vehicula non. Ut sed ex eros.</h3>
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1> Vehicula non. Ut sed ex eros.</h1>
+                    <p class="lead">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="src/carousel-2.jpg" alt="" class="img-fluid d-block">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3> Vehicula non. Ut sed ex eros.</h3>
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1> Vehicula non. Ut sed ex eros.</h1>
+                    <p class="lead">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="src/carousel-3.jpg" alt="" class="img-fluid d-block">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3> Vehicula non. Ut sed ex eros.</h3>
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
+                <div class="carousel-caption d-none d-md-block text-dark">
+                    <h1> Vehicula non. Ut sed ex eros.</h1>
+                    <p class="lead">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.</p>
                 </div>
             </div>
         </div>
@@ -94,6 +95,54 @@
             <span class="carousel-control-next-icon"></span>
             <span class="sr-only">Anterior</span>
         </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-3">Mussum Ipsum</h1>
+                <p>Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                    <nav class="nav nav-pills flex-column">
+                        <a href="#item1" class="nav-link">Item1</a>
+                        <nav class="nav nav-pills flex-colums">
+                            <a href="#item1-1" class="nav-link ml-3">Nullam a nisl ut</a>
+                            <a href="#item1-2" class="nav-link ml-3">Posuere libero varius</a>
+                        </nav>
+                        <a href="#item2" class="nav-link my-2">Item2</a>
+                        <a href="#item3" class="nav-link my-2">Item3</a>
+                        <nav class="nav nav-pills flex-colums">
+                            <a href="#item3-1" class="nav-link ml-3">Aenean sit amet nisi</a>
+                            <a href="#item3-2" class="nav-link ml-3">Atirei o pau no gatis</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+            <div class="col-9">
+                <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                    <h4 id="item1">Mussum Ipsum</h4>
+                    <p>cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit </p>
+                    <h5 id="item1-1">Aenean sit amet nis</h5>
+                    <p>tirei o pau no gatis, per gatis num morreus.</p>
+                    <h5 id="item1-2">Mais vale um bebadis conhecidiss</h5>
+                    <p>que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis!   </p>
+                    
+                    <h4 id="item2">Mussum Ipsum</h4>
+                    <p>cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit </p>
+                    
+                    <h4 id="item3">Mussum Ipsum</h4>
+                    <p>cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit </p>
+                    <h5 id="item3-1">Aenean sit amet nis</h5>
+                    <p>tirei o pau no gatis, per gatis num morreus.</p>
+                    <h5 id="item3-2">Mais vale um bebadis conhecidiss</h5>
+                    <p>que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis!   </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
