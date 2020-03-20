@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
     <title>Curso de Bootstrap4</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -100,7 +102,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center my-5">
-                <h1 class="display-3">Mussum Ipsum</h1>
+                <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Mussum Ipsum</h1>
                 <p>Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.</p>
             </div>
         </div>
@@ -218,7 +220,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4">Lorem Ipsun</h1>
+                    <h1 class="display-4"><i class="fa fa-video-camera text-primary aria-hidden="true"></i> Lorem Ipsun</h1>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam eum iure aut cumque velit architecto qui, aliquam consequuntur itaque eos repellat nesciunt dolorum amet illum temporibus, omnis quis consequatur?</p>
                     <hr>
                 </div>
@@ -280,6 +282,79 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-4">
+                <h1 class="display-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i>Lorem Ipsum</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form action="">
+                    <div class="form-row">                        
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" name="inputNome" id="inputNome" placeholder="Nome">
+                        </div>                        
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Seu sobrenome</label>
+                            <input type="text" class="form-control" name="inputSobrenome" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-row">                        
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Seu Endereço</label>
+                            <input type="text" class="form-control" name="inputEnd" id="inputEnd" placeholder="Endereço Completo">
+                        </div>
+                    </div>
+
+                    <div class="form-row">                         
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Sua Cidade</label>
+                            <input type="text" class="form-control" name="inputCidade" id="inputCidade" placeholder="Cidade">
+                        </div>                   
+                        <div class="form-group col-sm-4">
+                            <label for="inputEst">Seu Estado</label>
+                            <select name="inputEst" id="inputEst" class="form-control">
+                                <option selected>Escolha ...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                                <option value="">...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputCEP">Seu CEP</label>
+                            <input type="text" name="inputCEP" id="inputCEP" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">Desejo receber novidades por e-mail
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Popover" data-content="Texto teste de popover" a>ajuda</a>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- MODAL --> 
     <div class="modal fade" id="siteModal" tab-index="-1" role="dialog">
@@ -307,5 +382,10 @@
     <script src="node_modules/jquery/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
   </body>
 </html>
